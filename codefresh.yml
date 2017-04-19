@@ -20,3 +20,7 @@ steps:
       composition: docker-compose.yml
       environment_name: 'java-spring-mvc-jdbc'
       entry_point: tomcat
+      publish_all_ports:
+        - database
+        - tomcat
+        - app
